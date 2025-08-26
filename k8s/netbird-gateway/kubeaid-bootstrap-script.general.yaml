@@ -1,0 +1,50 @@
+forkURLs:
+  # KubeAid repository URL (in HTTPs syntax).
+  # Defaults to Obmondo's KubeAid repository.
+  kubeaid: https://github.com/Obmondo/KubeAid
+
+  # Your KubeAid config fork URL (in HTTPs syntax).
+  kubeaidConfig: https://github.com/VILJkid/kubeaid-config-ebillet
+
+# Kubernetes cluster and control-plane specific configurations.
+cluster:
+  # Kubernetes cluster name.
+  name: netbird-gateway
+
+  # Kubernetes version to use.
+  #
+  # We're using Kubermatic KubeOne v1.10 under the hood, to initialize the Kubernetes cluster.
+  # And the supported Kubernetes versions are specified here :
+  # https://docs.kubermatic.com/kubeone/v1.10/architecture/compatibility/supported-versions/.
+  k8sVersion: v1.33.4
+
+  # Kubeaid version to use.
+  #
+  # By default, the latest KubeAid version is used.
+  # You an view all the KubeAid versions here : https://github.com/Obmondo/kubeaid/releases.
+  kubeaidVersion: 17.0.0
+
+cloud:
+  bare-metal:
+    # If you don't provide details about an SSH private key, then the SSH auth socket will be used
+    # to authenticate to your Linux based bare-metal servers.
+    # So, whenever Kubermatic KubeOne tries to authenticate to your bare-metal Linux servers,
+    # KubeAid Bootstrap Script will prompt you to touch the YubiKey.
+    ssh:
+      {}
+      # privateKey:
+      #   privateKeyFilePath: ./outputs/ssh/rsa/openssh/.key
+
+    controlPlane:
+      endpoint:
+        host: "10.230.56.64"
+        port: 6443
+      hosts:
+        - privateAddress: "10.230.56.64"
+          #
+          # Or you can specify a private IP address.
+          # privateAddress: ""
+
+          sshPort: 22
+          sshUsername: root
+
