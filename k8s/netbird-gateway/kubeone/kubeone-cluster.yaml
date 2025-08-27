@@ -17,7 +17,7 @@ controlPlane:
   hosts:
     - sshPort: 22
       sshUsername: root
-      privateAddress: ebillet.netbird01
+      privateAddress: netbird01.ebillet.dk
 
 clusterNetwork:
   podSubnet: "10.244.0.0/16"
