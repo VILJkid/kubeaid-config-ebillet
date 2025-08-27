@@ -40,11 +40,11 @@ cloud:
         host: "10.230.56.64"
         port: 6443
       hosts:
-        - privateAddress: "10.230.56.64"
+        - privateAddress: "ebillet.netbird01"
           #
           # Or you can specify a private IP address.
           # privateAddress: ""
 
           sshPort: 22
-          sshUsername: obmondo-admin
+          sshUsername: root
 
