@@ -46,5 +46,5 @@ cloud:
           # privateAddress: ""
 
           sshPort: 22
-          sshUsername: root
+          sshUsername: obmondo-admin
 
