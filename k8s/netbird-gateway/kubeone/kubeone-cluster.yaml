@@ -17,7 +17,7 @@ controlPlane:
   hosts:
     - sshPort: 22040
       sshUsername: root
-      privateAddress: atat.enableit.dk
+      publicAddress: atat.enableit.dk
 
 clusterNetwork:
   podSubnet: "10.244.0.0/16"
