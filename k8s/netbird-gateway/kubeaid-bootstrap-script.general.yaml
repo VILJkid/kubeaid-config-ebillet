@@ -41,7 +41,7 @@ cloud:
         host: "10.230.56.64"
         port: 6443
       hosts:
-        - publicAddress: "atat.enableit.dk"
+        - publicAddress: "144.76.69.71"
           #
           # Or you can specify a private IP address.
           # privateAddress: ""
