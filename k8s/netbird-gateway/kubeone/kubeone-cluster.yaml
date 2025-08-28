@@ -15,7 +15,7 @@ apiEndpoint:
 
 controlPlane:
   hosts:
-    - sshPort: 22
+    - sshPort: 22040
       sshUsername: root
       privateAddress: atat.enableit.dk
 

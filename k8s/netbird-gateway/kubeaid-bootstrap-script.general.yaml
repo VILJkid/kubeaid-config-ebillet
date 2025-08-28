@@ -31,7 +31,8 @@ cloud:
     # So, whenever Kubermatic KubeOne tries to authenticate to your bare-metal Linux servers,
     # KubeAid Bootstrap Script will prompt you to touch the YubiKey.
     ssh:
-      {}
+      port: 22040
+      username: root
       # privateKey:
       #   privateKeyFilePath: ./outputs/ssh/rsa/openssh/.key
 
