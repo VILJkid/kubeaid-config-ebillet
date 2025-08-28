@@ -44,7 +44,7 @@ cloud:
         - publicAddress: "144.76.69.71"
           #
           # Or you can specify a private IP address.
-          # privateAddress: ""
+          privateAddress: "10.230.56.64"
 
           sshPort: 22040
           sshUsername: root
