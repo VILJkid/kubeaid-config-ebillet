@@ -17,7 +17,7 @@ controlPlane:
   hosts:
     - sshPort: 22
       sshUsername: root
-      privateAddress: ebillet.netbird01
+      privateAddress: atat
 
 clusterNetwork:
   podSubnet: "10.244.0.0/16"

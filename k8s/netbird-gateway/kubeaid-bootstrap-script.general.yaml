@@ -41,7 +41,7 @@ cloud:
         port: 6443
       hosts:
         # - privateAddress: "netbird01.ebillet.dk"
-        - privateAddress: "ebillet.netbird01"
+        - privateAddress: "atat"
           #
           # Or you can specify a private IP address.
           # privateAddress: ""
