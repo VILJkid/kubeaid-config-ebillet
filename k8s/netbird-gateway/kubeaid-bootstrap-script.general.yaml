@@ -40,11 +40,28 @@ cloud:
         host: "10.230.56.64"
         port: 6443
       hosts:
-        - privateAddress: "netbird01.ebillet.dk"
+        # - privateAddress: "netbird01.ebillet.dk"
+        - privateAddress: "ebillet.netbird01"
           #
           # Or you can specify a private IP address.
           # privateAddress: ""
 
-          # sshPort: 22
+          sshPort: 22040
           sshUsername: root
+          # sshHostPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5UNKbgWYLu+WawOncF32T27CuEOLZaWBb2IqkrpYBbd3xyX3BMqWM6EUn9ZSDj2mVSMXDV2T5VWlFdFScyTN7gqSDfQw7+/p4nlv5Psdh19p81OsYltwyOA+azBnI1vNzXn2tXc1pw7UF7yzvNRGplZZrp3fucFVjSw1aaZgJdM17ZeetRqgyU26JwgeDKr1nJTDuLKI5MSI6T6npi1ifK30DpKyPy8sd6s8S0xpQ6mfu8X/NjFJXSsYwwuNt6vKqJnY9A8dnkVnRqAnZHtaQPo+QKuAoq+uzwbSOyBrVQqtYj4kWACTykXoydQwqhzOjBXdsIexdYrvKcfxgHMQsheMFt6nKtpxhAiw2A26c074QbQhcr+X2ODGfR/Gy3lelL5jsmqSgf+uLUt625rjmQ7/AvJV5sY9JCXyanZz+rkYCECvTrIvXfOtQH0VndvyuA0B0hTQbp2inshpREaT5f8B5Yk4w9a+mfX+v2Zw1Nw5NI7ce59WU9zazsElbcl+fh8KVJwrStRo7Q2u/QajqoTYCdsOcbsKh+vpzfDtCjHqiRyfBiS1FpVvillTYs/YmrLpDYk0t7hGiViZ1Hv+CCDlxmdq6hw4bS2JHDLS+6Dv4wrpyerw++WdfsXAkqRQKPIy2dVt4vLGWfmRxHTCo6dm7yhGrfs9rbGT5Cx3dlw== cardno:13_819_953"
+          # sshHostPublicKey: |
+          #   c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFDNVVOS2JnV1lMdStXYXdPbmNG
+          #   MzJUMjdDdUVPTFphV0JiMklxa3JwWUJiZDN4eVgzQk1xV002RVVuOVpTRGoybVZTTVhEVjJUNVZX
+          #   bEZkRlNjeVRON2dxU0RmUXc3Ky9wNG5sdjVQc2RoMTlwODFPc1lsdHd5T0ErYXpCbkkxdk56WG4y
+          #   dFhjMXB3N1VGN3l6dk5SR3BsWlpycDNmdWNGVmpTdzFhYVpnSmRNMTdaZWV0UnFneVUyNkp3Z2VE
+          #   S3IxbkpURHVMS0k1TVNJNlQ2bnBpMWlmSzMwRHBLeVB5OHNkNnM4UzB4cFE2bWZ1OFgvTmpGSlhT
+          #   c1l3d3VOdDZ2S3FKblk5QThkbmtWblJxQW5aSHRhUVBvK1FLdUFvcSt1endiU095QnJWUXF0WWo0
+          #   a1dBQ1R5a1hveWRRd3Foek9qQlhkc0lleGRZcnZLY2Z4Z0hNUXNoZU1GdDZuS3RweGhBaXcyQTI2
+          #   YzA3NFFiUWhjcitYMk9ER2ZSL0d5M2xlbEw1anNtcVNnZit1TFV0NjI1cmptUTcvQXZKVjVzWTlK
+          #   Q1h5YW5aeitya1lDRUN2VHJJdlhmT3RRSDBWbmR2eXVBMEIwaFRRYnAyaW5zaHBSRWFUNWY4QjVZ
+          #   azR3OWErbWZYK3YyWncxTnc1Tkk3Y2U1OVdVOXphenNFbGJjbCtmaDhLVkp3clN0Um83UTJ1L1Fh
+          #   anFvVFlDZHNPY2JzS2grdnB6ZkR0Q2pIcWlSeWZCaVMxRnBWdmlsbFRZcy9ZbXJMcERZazB0N2hH
+          #   aVZpWjFIditDQ0RseG1kcTZodzRiUzJKSERMUys2RHY0d3JweWVydysrV2Rmc1hBa3FSUUtQSXky
+          #   ZFZ0NHZMR1dmbVJ4SFRDbzZkbTd5aEdyZnM5cmJHVDVDeDNkbHc9PSBjYXJkbm86MTNfODE5Xzk1
+          #   Mwo=
 
