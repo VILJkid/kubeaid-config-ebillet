@@ -15,8 +15,8 @@ apiEndpoint:
 
 controlPlane:
   hosts:
-    - sshPort: 22
-      sshUsername: root
+    -
+      sshPort: 22
       sshPrivateKeyFile: ./outputs/ssh/rsa/openssh/.key
       publicAddress: 46.62.135.225
 
