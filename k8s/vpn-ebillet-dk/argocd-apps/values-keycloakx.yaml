@@ -6,9 +6,5 @@ keycloakx:
     hostname: keycloak-pgsql-rw
 
 cnpg:
-  instance: 1
-
-postgresql:
+  storageClass: openebs-hostpath
   size: 2Gi
-  host: keycloak-pgsql-rw
-  pass: keycloak-pgsql-app
