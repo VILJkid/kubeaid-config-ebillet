@@ -189,3 +189,7 @@ coturn:
       secretKeys:
         username: turnServerUser
         password: turnServerPassword
+
+externalDatabases:
+  netbird:
+    storageClass: openebs-hostpath
