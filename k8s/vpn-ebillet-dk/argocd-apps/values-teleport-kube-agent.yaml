@@ -1,0 +1,11 @@
+---
+teleport-kube-agent:
+  roles: kube
+  kubeClusterName: vpn-ebillet-dk
+  proxyAddr: teleport.obmondo.com:443
+  labels:
+    env: ebillet-vpn
+  # Pin this to the image version KBM is using
+  teleportVersionOverride: 17.4.5
+  log:
+    level: INFO
