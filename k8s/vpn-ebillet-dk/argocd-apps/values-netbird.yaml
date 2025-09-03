@@ -42,17 +42,17 @@ netbird:
           "CertFile": "",
           "CertKey": "",
           "AuthAudience": "{{ .IDP_CLIENT_ID }}",
-          "AuthIssuer": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet",
+          "AuthIssuer": "http://keycloakx-http.keycloakx/auth/realms/Ebillet",
           "AuthUserIDClaim": "",
-          "AuthKeysLocation": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/protocol/openid-connect/certs",
-          "OIDCConfigEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/.well-known/openid-configuration",
+          "AuthKeysLocation": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/protocol/openid-connect/certs",
+          "OIDCConfigEndpoint": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/.well-known/openid-configuration",
           "IdpSignKeyRefreshEnabled": false
         },
         "IdpManagerConfig": {
           "ManagerType": "keycloak",
           "ClientConfig": {
-            "Issuer": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/.well-known/openid-configuration",
-            "TokenEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/protocol/openid-connect/token",
+            "Issuer": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/.well-known/openid-configuration",
+            "TokenEndpoint": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/protocol/openid-connect/token",
             "ClientID": "{{ .IDP_CLIENT_MGMT_ID }}",
             "ClientSecret": "{{ .IDP_CLIENT_MGMT_SECRET }}",
             "GrantType": "client_credentials"
@@ -60,7 +60,7 @@ netbird:
           "ExtraConfig": {
             "Password": "{{ .IDP_SERVICE_ACCOUNT_PASSWORD }}",
             "Username": "{{ .IDP_SERVICE_ACCOUNT_USER }}",
-            "AdminEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/admin/realms/Ebillet"
+            "AdminEndpoint": "http://keycloakx-http.keycloakx/auth/admin/realms/Ebillet"
           },
           "KeycloakClientCredentials": null
         },
@@ -71,8 +71,8 @@ netbird:
             "ClientSecret": "",
             "Domain": "auth.ebillet.dk",
             "Audience": "{{ .IDP_CLIENT_ID }}",
-            "TokenEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/protocol/openid-connect/token",
-            "DeviceAuthEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/protocol/openid-connect/auth/device",
+            "TokenEndpoint": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/protocol/openid-connect/token",
+            "DeviceAuthEndpoint": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/protocol/openid-connect/auth/device",
             "AuthorizationEndpoint": "",
             "Scope": "openid",
             "UseIDToken": false,
@@ -85,7 +85,7 @@ netbird:
             "ClientSecret": "",
             "Domain": "auth.ebillet.dk",
             "Audience": "{{ .IDP_CLIENT_ID }}",
-            "TokenEndpoint": "http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet/protocol/openid-connect/token",
+            "TokenEndpoint": "http://keycloakx-http.keycloakx/auth/realms/Ebillet/protocol/openid-connect/token",
             "DeviceAuthEndpoint": "",
             "AuthorizationEndpoint": "",
             "Scope": "openid profile email offline_access netbird-vpn-api",
@@ -173,7 +173,7 @@ netbird:
       NETBIRD_MGMT_API_ENDPOINT: https://vpn2.ebillet.dk:443
       NETBIRD_MGMT_GRPC_API_ENDPOINT: https://vpn2.ebillet.dk:443
       # OIDC
-      AUTH_AUTHORITY: http://keycloakx-headless.keycloakx.svc.cluster.local/auth/realms/Ebillet
+      AUTH_AUTHORITY: http://keycloakx-http.keycloakx/auth/realms/Ebillet
     ingress:
       enabled: false
       tls:
