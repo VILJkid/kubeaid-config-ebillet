@@ -1,0 +1,5 @@
+traefik:
+  service:
+    type: NodePort
+    externalIPs:
+      - "46.62.135.225"
