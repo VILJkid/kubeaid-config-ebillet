@@ -3,3 +3,7 @@ traefik:
     type: NodePort
     externalIPs:
       - "46.62.135.225"
+  metrics:
+    prometheus:
+      serviceMonitor:
+        enabled: false
