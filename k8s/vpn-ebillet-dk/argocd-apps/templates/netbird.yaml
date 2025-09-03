@@ -20,7 +20,7 @@ spec:
       targetRevision: HEAD
       helm:
         valueFiles:
-          - k8s/vpn-ebillet-dk/argocd-apps/values-netbird.yaml
+          - ../../k8s/vpn-ebillet-dk/argocd-apps/values-netbird.yaml
   syncPolicy:
     syncOptions:
       - ApplyOutOfSyncOnly=true
